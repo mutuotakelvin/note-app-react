@@ -1,7 +1,7 @@
 import React from 'react'
 import {MdDeleteForever} from 'react-icons/md'
-{/*this is our note card component
-here am using id,text,date,handleDeleteNote as props which have been defined in App.js*/}
+//this is our note card component
+//here am using id,text,date,handleDeleteNote as props which have been defined in App.js
 
 function Note({id,text,date,handleDelete}) {
     return (
