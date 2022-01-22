@@ -24,7 +24,7 @@ function App() {
   },
  
 ]);
-{/*this are the staes for searching text and toggle mode*/}
+{/*this are the states for searching text and toggle mode*/}
 
 const [searchNote,setSearchNote] = useState('');
 const [darkMode,setDarkMode] = useState(false)
@@ -39,6 +39,7 @@ useEffect(()=>{
 useEffect(()=>{
   localStorage.setItem('react-notes-app-data',JSON.stringify(notes))
 },[notes])
+
 {/*this function is for adding new note*/}
 const addNote = (text) =>{
   
@@ -52,6 +53,7 @@ const addNote = (text) =>{
   setNotes(newNotes)
 }
 {/*this function is for deleting notes in note app with a id*/}
+
 const deletingNote = (id) =>{
  const newNotes = notes.filter((note)=> note.id!==id);
  setNotes(newNotes)
