@@ -15,7 +15,7 @@ function Note({id,text,date,handleDelete}) {
                 <small>{date}</small>
                 {/*this is for deleting the note using each note's unique id as parameter
                 so we have passed handleDeleteNote function as it's onClick event*/}
-                <MdDeleteForever onClick={()=>handleDelete(id)} className="delete-icon" size="1.3em" />
+                <MdDeleteForever style={{color:"#E81217"}} onClick={()=>handleDelete(id)} className="delete-icon" size="1.3em" />
             </div>
             
         </div>

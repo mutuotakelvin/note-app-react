@@ -1,6 +1,6 @@
 import React from 'react'
-import Note from './Note'
-import AddNote from './AddNote'
+import Note from './../note/Note'
+import AddNote from './../addNote/AddNote'
 
 //this component is storing the notes in a format
 const NotesList=({notes,handleAddNote,handleDelete}) =>{
